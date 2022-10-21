@@ -1,0 +1,14 @@
+"use strict";
+exports.__esModule = true;
+var mamiferos_1 = require("./mamiferos");
+var herviboros_1 = require("./herviboros");
+var carnivoros_1 = require("./carnivoros");
+var omnivoros_1 = require("./omnivoros");
+var mamiferos1 = new mamiferos_1.mamiferos("Gato", 4, true, false);
+var herviboros1 = new herviboros_1.herviboros("Jirafa", 4, true, false, false);
+var carnivoros1 = new carnivoros_1.carnivoros("Leon", 4, true, false, ["Cebra", "Antílopes"], true, true);
+var omnivoros1 = new omnivoros_1.omnivoros("Cerdo", 4, true, false, true, true);
+mamiferos1.comer();
+carnivoros1.comer();
+omnivoros1.comer();
+herviboros1.comer();

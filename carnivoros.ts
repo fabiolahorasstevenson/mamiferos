@@ -1,6 +1,6 @@
 import { mamiferos } from "./mamiferos";
 
-class carnivoros extends mamiferos{
+export class carnivoros extends mamiferos{
 
 
     private animalQueCome : string[];
@@ -16,6 +16,6 @@ class carnivoros extends mamiferos{
     }
 
     public comer(){
-        
+        console.log("Los carnívoros comen solo carne es por eso que tiene garras en sus patas y colmillos afilados");
     }
 }

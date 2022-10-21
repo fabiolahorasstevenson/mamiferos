@@ -45,6 +45,10 @@ export class mamiferos{
     public setAnimalActuatico(pAnimalAcuatico:boolean):void{
         this.animalAcuatico = pAnimalAcuatico;
     }
+    
+    public comer(){
+        console.log("El mamífero puede comer distintas cosas, existen diversas clases de mamíferos en este aspecto");
+    }
 }
 
 

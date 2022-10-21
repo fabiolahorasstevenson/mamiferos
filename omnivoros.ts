@@ -1,6 +1,6 @@
 import { mamiferos } from "./mamiferos";
 
-class omnivoros extends mamiferos{
+export class omnivoros extends mamiferos{
 
     private digestionAdaptativa: boolean;
 
@@ -11,6 +11,6 @@ class omnivoros extends mamiferos{
     }
 
     public comer(){
-
+        console.log("Los omnivoros comen cualquier alimento, es por eso que cuentan con un estómago adaptativo");
     }
 }

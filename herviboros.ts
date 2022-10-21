@@ -1,6 +1,6 @@
 import { mamiferos } from "./mamiferos";
 
-class herviboros extends mamiferos{
+export class herviboros extends mamiferos{
 
     private tieneColmillo : boolean;
 
@@ -10,6 +10,6 @@ class herviboros extends mamiferos{
     }
 
     public comer(){
-
+        console.log("Los hervíboros comen solo plantas, por ello no tienen colmillos afilados");
     }
 }
