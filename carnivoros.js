@@ -15,20 +15,20 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 exports.__esModule = true;
-exports.carnivoros = void 0;
+exports.Carnivoro = void 0;
 var mamiferos_1 = require("./mamiferos");
-var carnivoros = /** @class */ (function (_super) {
-    __extends(carnivoros, _super);
-    function carnivoros(pAnimal, pCantidadPatas, pTienePelo, pAnimalAcuatico, pAnimalQueCome, pEsDepredador, pPatasConGarras) {
+var Carnivoro = /** @class */ (function (_super) {
+    __extends(Carnivoro, _super);
+    function Carnivoro(pAnimal, pCantidadPatas, pTienePelo, pAnimalAcuatico, pAnimalQueCome, pEsDepredador, pPatasConGarras) {
         var _this = _super.call(this, pAnimal, pCantidadPatas, pTienePelo, pAnimalAcuatico) || this;
         _this.animalQueCome = pAnimalQueCome;
         _this.esDepredador = pEsDepredador;
         _this.patasConGarras = pPatasConGarras;
         return _this;
     }
-    carnivoros.prototype.comer = function () {
+    Carnivoro.prototype.comer = function () {
         console.log("Los carnívoros comen solo carne es por eso que tiene garras en sus patas y colmillos afilados");
     };
-    return carnivoros;
-}(mamiferos_1.mamiferos));
-exports.carnivoros = carnivoros;
+    return Carnivoro;
+}(mamiferos_1.Mamifero));
+exports.Carnivoro = Carnivoro;

@@ -15,18 +15,18 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 exports.__esModule = true;
-exports.herviboros = void 0;
+exports.Herviboro = void 0;
 var mamiferos_1 = require("./mamiferos");
-var herviboros = /** @class */ (function (_super) {
-    __extends(herviboros, _super);
-    function herviboros(pAnimal, pCantidadPatas, pTienePelo, pAnimalAcuatico, pTieneColmillo) {
+var Herviboro = /** @class */ (function (_super) {
+    __extends(Herviboro, _super);
+    function Herviboro(pAnimal, pCantidadPatas, pTienePelo, pAnimalAcuatico, pTieneColmillo) {
         var _this = _super.call(this, pAnimal, pCantidadPatas, pTienePelo, pAnimalAcuatico) || this;
         _this.tieneColmillo = pTieneColmillo;
         return _this;
     }
-    herviboros.prototype.comer = function () {
+    Herviboro.prototype.comer = function () {
         console.log("Los hervíboros comen solo plantas, por ello no tienen colmillos afilados");
     };
-    return herviboros;
-}(mamiferos_1.mamiferos));
-exports.herviboros = herviboros;
+    return Herviboro;
+}(mamiferos_1.Mamifero));
+exports.Herviboro = Herviboro;
