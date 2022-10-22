@@ -1,15 +1,14 @@
-import { mamiferos } from "./mamiferos";
+import { Mamifero } from "./mamiferos";
 
-export class herviboros extends mamiferos{
+export class Herviboro extends Mamifero {
+    private tieneColmillo: boolean;
 
-    private tieneColmillo : boolean;
-
-    public constructor(pAnimal:string,pCantidadPatas:number,pTienePelo: boolean,pAnimalAcuatico: boolean,pTieneColmillo: boolean){
-        super(pAnimal,pCantidadPatas,pTienePelo,pAnimalAcuatico);
+    public constructor(pAnimal: string, pCantidadPatas: number, pTienePelo: boolean, pAnimalAcuatico: boolean, pTieneColmillo: boolean) {
+        super(pAnimal, pCantidadPatas, pTienePelo, pAnimalAcuatico);
         this.tieneColmillo = pTieneColmillo;
     }
 
-    public comer(){
+    public comer() {
         console.log("Los hervíboros comen solo plantas, por ello no tienen colmillos afilados");
     }
 }

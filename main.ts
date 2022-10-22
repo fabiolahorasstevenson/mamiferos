@@ -1,14 +1,14 @@
-import { mamiferos } from "./mamiferos";
-import { herviboros } from "./herviboros";
-import { carnivoros } from "./carnivoros";
-import { omnivoros } from "./omnivoros";
+import { Mamifero } from "./mamiferos";
+import { Herviboro } from "./herviboros";
+import { Carnivoro } from "./carnivoros";
+import { Omnivoro } from "./omnivoros";
 
-let mamiferos1: mamiferos = new mamiferos("Gato",4,true,false);
-let herviboros1: herviboros = new herviboros("Jirafa",4,true,false,false);
-let carnivoros1: carnivoros = new carnivoros("Leon",4,true,false,["Cebra","Antílopes"],true,true);
-let omnivoros1: omnivoros = new omnivoros("Cerdo",4,true,false,true,true);
+let mamifero1: Mamifero = new Mamifero("Gato",4,true,false);
+let herviboro1: Herviboro = new Herviboro("Jirafa",4,true,false,false);
+let carnivoro1: Carnivoro = new Carnivoro("Leon",4,true,false,["Cebra","Antílopes"],true,true);
+let omnivoro1: Omnivoro = new Omnivoro("Cerdo",4,true,false,true,true);
 
-mamiferos1.comer();
-carnivoros1.comer();
-omnivoros1.comer();
-herviboros1.comer();
+mamifero1.comer();
+carnivoro1.comer();
+omnivoro1.comer();
+herviboro1.comer();
